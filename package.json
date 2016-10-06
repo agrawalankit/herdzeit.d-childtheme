@@ -1,0 +1,25 @@
+{
+  "name": "food-recipe-hgp-child-theme",
+  "version": "1.0.0",
+  "description": "Child Theme for herdzeit.de ",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gepopp/herdzeit.d-childtheme.git"
+  },
+  "keywords": [
+    "herdzeit",
+    "wordpress",
+    "child",
+    "theme"
+  ],
+  "author": "Popp Gerhard",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/gepopp/herdzeit.d-childtheme/issues"
+  },
+  "homepage": "https://github.com/gepopp/herdzeit.d-childtheme#readme"
+}
