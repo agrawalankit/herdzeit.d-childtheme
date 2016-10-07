@@ -1,7 +1,7 @@
 <form action="<?php echo home_url(); ?>" id="searchform">
     <p>
         <input type="text" name="s" id="s" class="field" value="" placeholder="<?php _e('Recipe, Ingredient, Skill Level, Cuisine...', 'FoodRecipe');?>" />
-        <input type="submit" name="s_submit" id="s-submit" value="" />
+        <input type="submit" name="s_submit" id="s-submit" value=""/>
     </p>
 </form>
 <p class="statement"><span class="fireRed"><?php _e('Top Recipe Types', 'FoodRecipe');?>:</span>

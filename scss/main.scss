@@ -7,6 +7,7 @@ Author URI: http://www.poppgerhard.at
 Template: food-recipes
 Version: 0.1
 */
+
 @import url("../food-recipes/style.css");
 
 /*--------------------------------------------------
@@ -32,6 +33,11 @@ top search
 --------------------------------------------------*/
 @import "includes/_top_search";
 
+/*------------------------------------------------
+footer
+-------------------------------------------------*/
+@import "includes/_footer";
+
 /* Media queries*/
 
 @media screen and (max-width: 1023px) {
@@ -39,7 +45,7 @@ top search
         max-width: 740px;
     }
 
-    #footer-wrap,
+    
     #nav-wrap .inn-nav {
         max-width: 700px;
     }
@@ -68,8 +74,8 @@ top search
 
 
 @media screen and (max-width: 765px) {
-    #header-wrapper,
-    #footer-wrap {
+    #header-wrapper
+    {
         max-width: 600px;
         width: auto;
     }
@@ -416,4 +422,3 @@ top search
         overflow-y:scroll;
     }
 }
-

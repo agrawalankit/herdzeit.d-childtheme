@@ -61,21 +61,22 @@ module.exports = function (grunt) {
 
         /**
          * watch task
-         */
-        watch: {
-            
-            css:{
-                files: ['**/*.scss','**/*.js'],
-                tasks: ['sass', 'autoprefixer', 'uglify']
-            }
-            
-            
+       
+        */
+       chokidar: {
+            scripts: {
+                files: ['**/*.scss'],
+                tasks: ['sass', 'autoprefixer'],
+                options: {
+                spawn: false,
+                }
+            },
         }
-        
     });
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.registerTask('default', ['watch']);
+    //grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-chokidar');
+    grunt.registerTask('default', ['chokidar']);
 };
