@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/OpenSans-Bold-webfont.eot');
+    src: url('fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabbold';
+    src: url('fonts/RobotoSlab-Bold-webfont.eot');
+    src: url('fonts/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoSlab-Bold-webfont.woff') format('woff'),
+         url('fonts/RobotoSlab-Bold-webfont.ttf') format('truetype'),
+         url('fonts/RobotoSlab-Bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('fonts/RobotoSlab-Regular-webfont.eot');
+    src: url('fonts/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('fonts/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('fonts/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "roboto_slabbold", Georgia, Times, serif !important;
+  color: #5e6063;
+  font-weight: normal;
+}
+
+#bottom li h1,
+#bottom li h1 span,
+#bottom li h2,
+#bottom li h2 span,
+#bottom li h3,
+#bottom li h3 span,
+#bottom li h4,
+#bottom li h4 span,
+#bottom li h5,
+#bottom li h5 span,
+#bottom li h6,
+#bottom li h6 span {
+    color: #5e6063;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 24.5px;
+  line-height: 24px;
+  margin: 0px 0px 10px;
+}
+
+h4 {
+  font-size: 14px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+  color: #68aa10;
+}
+
+
+
+.main-wrap{
+    background: none;
+}
+
+.containter{
+    width: 100%;
+}
+
+
+.shadow {
+  
+  box-shadow: 
+    0 -6px white,          // Top Masking Shadow
+    0 6px white,           // Bottom Masking Shadow
+    7px 0 4px -3px rgba(0,0,0,.1),  // Left-shadow
+    -7px 0 4px -3px rgba(0,0,0,.1);
+}
+

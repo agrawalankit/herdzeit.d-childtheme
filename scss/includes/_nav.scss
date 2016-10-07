@@ -1,0 +1,92 @@
+#nav-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 45px;
+    width: 100%;
+    bottom: 0;
+    background: #67ab23;
+    z-index: 9999;
+    border-bottom: 3px solid #487026;
+}
+
+#nav-wrap {
+    
+ margin-bottom:20px;   
+    
+ .social-nav {
+      height: 42px;
+      padding: 0px;
+}
+.social-nav li {
+    float: none;
+    display: inline-block;
+    margin: 0 !important;
+    height: 42px;
+    width: 42px;
+}
+ .social-nav li a {
+  display: block;
+  width: 42px;
+  height: 42px;
+  font-size: 0px;
+  background-repeat: no-repeat;
+  border-radius: 0;
+}
+.social-nav li.twitter a {
+  background: transparent url(images/twitter-32.png) no-repeat center center;
+}
+.social-nav li.facebook a {
+  background: transparent url(images/facebook-32.png) no-repeat center center;
+}
+.social-nav li.gplus a {
+  background: transparent url(images/googleplus-32.png) no-repeat center center;
+}
+.social-nav li.pinterest a {
+  background: transparent url(images/pinterest-32.png) no-repeat center center;
+}
+.social-nav li.twitter a:hover {
+  background-color: #00b0ef;
+}
+.social-nav li.facebook:hover a {
+  background-color: #265999;
+}
+.social-nav li.gplus:hover a {
+  background-color: #f32e31;
+}
+.social-nav li.pinterest:hover a {
+  background-color: #ef0021;
+}
+
+}
+#nav-wrap .nav li.has-children > a {
+padding-right: 30px;
+}
+
+
+#nav-wrap .nav li.has-children > a:after {
+  opacity: 0.65;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  speak: none;
+  vertical-align: middle;
+  background: transparent url(images/tri-down.png) no-repeat center center;
+  transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+}
+
+
+@media screen and (max-width:1200px){
+    #menu-sociale-links{
+        display:none;
+    }
+}
+@media screen and (max-width:765px){
+    #menu-sociale-links{
+        display:block;
+    }
+}

@@ -1,0 +1,132 @@
+/** Dave's WordPress Live Search CSS **/
+ul.search_results
+{
+display: block;
+background-color:#fff;
+max-width:980px;
+max-height: 500px;
+position:absolute;
+top:20px;
+left:0px;
+overflow:hidden;
+z-index: 9999;	
+list-style-type: none;
+list-style-image: none;
+list-style-position: inside;
+padding: 0px;
+margin: 0px;
+}
+
+.hasShadow {
+-webkit-box-shadow: 0 5px 6px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 5px 6px 2px rgba(0,0,0,0.25);
+	box-shadow: 0 5px 6px 2px rgba(0,0,0,0.25);
+}
+ul.search_results li
+{
+display: block;
+float: left;
+width: 176px;
+min-height: 190px;
+padding: 10px;
+margin: 0px 0px 0px 0px;
+text-align: left;	
+cursor: pointer;
+color: #000;
+background-color: transparent;
+text-decoration: none;
+}
+
+ul.search_results * {
+transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	}
+
+ul.search_results li:hover
+{
+background-color: #F4F4F4;	
+}
+
+ul.search_results li a, ul.search_results li a:visited
+{
+display: block;
+margin-left: 0px;
+padding-left: 0px;
+text-decoration: none;
+font-size: 15px;
+font-family: "roboto_slabbold", Times, serif; color: #0053a6; font-weight: normal;
+}
+
+ul.search_results li a:hover, ul.search_results li:hover a {
+color: #003f7e;
+}
+
+ul.search_results p#daves-wordpress-live-search_author
+{
+margin: 0px;
+font-size: 90%;
+font-weight: bold;
+}
+
+ul.search_results p#daves-wordpress-live-search_date
+{
+margin: 0px;
+font-size: 90%;
+}
+
+/* BEGIN post thumbnails */
+ul.search_results li.post_with_thumb a {
+width:176px;
+display: block;
+}
+
+ul.search_results li.post_with_thumb img.post_thumb
+{
+
+margin: 0 0 10px 0;
+height: 115px;
+width: 145px;
+
+}
+/* END post thumbnails */
+
+/* BEGIN post excerpt */
+ul.search_results .excerpt, ul.search_results .meta
+{
+font-size: 75%;
+width: 100%;
+}
+/* END post excerpt */
+
+ul.search_results .clearfix
+{
+float: none !important;
+clear: both !important;
+}
+
+.search_footer {
+background-color: #67ab23;
+width: 100%;
+text-align: right;
+height: 40px;
+border-bottom: 3px solid #487026;
+}
+
+.search_footer a,
+.search_footer a:visited {
+color: #fff;	
+display: inline-block;
+padding: 0 10px 0 10px;
+line-height: 40px;
+height: 40px;
+}
+
+.search_footer a:hover {
+background-color: #345e0a;
+}
+
+#search_results_activity_indicator{
+z-index:999999;
+}
