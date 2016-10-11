@@ -1,5 +1,6 @@
 <?php
 require_once 'theme-options.php';
+require_once 'shortcodes/right-slider-sc.php';
     
     
     

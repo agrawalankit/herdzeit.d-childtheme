@@ -1,0 +1,65 @@
+#slider.slider2 .most-rated {
+  background: url("images/most-rated-bg.png") no-repeat !important;
+  border-top-right-radius: 0px;
+  height: 100px !important;
+}
+
+#slider.slider2 .most-rated .item {
+    background: none;
+    padding-top: 10px;
+    height: 80px;
+    overflow: hidden;
+}
+
+#slider.slider2 .most-rated p {
+    font-size: 12px;
+}
+
+.most-rated-title {
+    display: none;
+}
+#slider.slider2 {
+    height: 425px;
+    padding-top: 10px;
+    margin: 0 -15px 0 -15px;
+    box-sizing: content-box;
+}
+#slider.slider2 .slides .slide-info .rating .on, #slider.slider2 .slides .slide-info .rating .off {
+    background: rgba(0, 0, 0, 0) url("images/ratings-big.png") no-repeat scroll center top;
+    height: 26px;
+    margin: 0;
+    width: 23px;
+}
+
+#slider.slider2 .slides .slide-info .rating span {
+    display: inline-block;
+    line-height: 25px;
+    margin: 0 0 0 10px;
+    vertical-align: top;
+}
+
+#slider.slider2 .most-rated .rate span.on {
+    background: rgba(0, 0, 0, 0) url("images/spons.png") no-repeat scroll left top;
+}
+
+#slider.slider2 .most-rated .rate span {
+    background: rgba(0, 0, 0, 0) url("images/spons.png") no-repeat scroll right top;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    width: 12px;
+}
+
+#slider.slider2 .most-rated .rate span:last-child {
+    margin-right: 5px;
+}
+
+#slider.slider2 .most-rated .rate span {
+    background: rgba(0, 0, 0, 0) url("images/spons.png") no-repeat scroll right top;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    width: 12px;
+}

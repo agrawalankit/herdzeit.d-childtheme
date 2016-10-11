@@ -26,399 +26,96 @@ Header Styles
 nav
 --------------------------------------------------*/
 @import "includes/_nav.scss";
-
-
 /*-------------------------------------------------
 top search
 --------------------------------------------------*/
 @import "includes/_top_search";
-
 /*------------------------------------------------
 footer
 -------------------------------------------------*/
 @import "includes/_footer";
+/*------------------------------------------------
+slider 2
+-------------------------------------------------*/
+@import "includes/_slider2";
 
 /* Media queries*/
-
-@media screen and (max-width: 1023px) {
-    #header-wrapper {
-        max-width: 740px;
-    }
-
-    
-    #nav-wrap .inn-nav {
-        max-width: 700px;
-    }
-
-    #nav-wrap .nav {
-        max-width: 550px;
-        width: auto;
-    }
-
-    #whats-hot .cat-list li p.wh-excerpt {
-        height: 100px;
-    }
-
-    .top-search #searchform {
-        width: 35%;
-    }
-
-    .top-search input.field {
-        width: 180px;
-    }
-
-    .top-search .statement {
-        width: 57%;
-    }
-}
-
-
-@media screen and (max-width: 765px) {
-    #header-wrapper
-    {
-        max-width: 600px;
-        width: auto;
-    }
-
-    #nav-wrap {
-        height: auto !important;
-    }
-
-    #nav-wrap .social-nav {
-        float: none;
-        clear: both;
-    }
-
-    #nav-wrap .inn-nav {
-        margin: 0 auto;
-    }
-
-    #nav-wrap .responsive-nav {
-        clear: left;
-        width: 90% !important;
-        margin-left: 5% !important;
-        margin-right: 5% !important;
-        margin-top: 5px;
-    }
-
-    .top-search form .field {
-        background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0 !important;
-    }
-
-    .top-search input.field {
-        max-width: 100%;
-        width: 100% !important;
-    }
-
-    .top-search #s-submit {
-        background: #67ab23 url("images/search-icon.png") no-repeat scroll 45% center !important;
-        border-bottom: 3px solid #487026 !important;
-        border-radius: 0 20px 20px 0 !important;
-        box-sizing: border-box !important;
-        color: #ffffff !important;
-        display: block !important;
-        float: left !important;
-        height: 40px !important;
-        vertical-align: top !important;
-        width: 55px !important;
-    }
-
-    #slider.slider2 .most-rated .item {
-        margin-left: 110px !important;
-    }
-}
-
-@media screen and (max-width: 597px) {
-    #container {
-        width: auto !important;
-    }
-
-    #slider.slider2 {
-        height: auto;
-    }
-
-    #slider.slider2 .most-rated {
-        background-position: -60px 0px !important;
-    }
-
-    #slider.slider2 .most-rated .item {
-        margin-left: 45px !important;
-    }
-}
-
-
-@media screen and (max-width: 528px) {
-  #left-area .info-right .rate-box {
-    width: 100% !important;
-  }
-}
-
-@media screen and (min-width: 766px) {
-    #header {
-        background: url("images/header-image5.jpg") no-repeat scroll right bottom;
-        min-height: 140px;
-    }
-
-    a.responsive_logo {
-        margin-top: 10px;
-    }
-
-    #nav-wrap .inn-nav {
-        padding: 0 20px;
-    }
-}
-
-
-
 
 #left-area .info-right .more-recipe {
     padding: 25px 0 10px 0 !Important;
     width: 232px;
 }
-
-
-
-@media (min-height: 751px){
-    #floatingbox-receipe {
-        position: fixed;
-        right: -24px;
-        top: 300px;
-        transition: 0.6s;
-        width:80px;
-        z-index:9999;
-    }
-}
-
-    #floatingbox-receipe {
-        position: fixed;
-        right: -24px;
-        top: 120px;
-        transition: 0.6s;
-        width:80px;
-        z-index:9998;
-    }
-
-#floatingbox-receipe a {
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 20px;
-    background: #67ab23;
-    padding: 10px 18px 10px 18px;
-    text-decoration: none;
-}
-#floatingbox-receipe a:hover {
-    background: #487026;
-    text-decoration: none;
-}
-
-.float-box{
-    right: 30px !Important;
-}
-
-
-  ul li.ingredient:nth-child(2n+1) {
-    background-color: #f4f4f4;
-}
- ul li.ingredient {
-    font-family: "roboto_slabregular",Arial,Helvetica,sans-serif;
-    font-size: 15px;
-    padding: 5px 10px;
-}
- #ingredients-calc-container {
-    margin-bottom: 30px;
+/*
+#left-area .recipe-listing-item .recipe-info .rating {
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    height: auto !important;
+    min-height: 45px !important;
+    margin: 0 0 15px;
     overflow: hidden;
-}
- #ingredients-calc {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    background-color: #eee;
-    border-color: #ddd;
-    border-image: none;
-    border-radius: 0 0 5px 5px;
-    border-style: none solid solid;
-    border-width: medium 1px 1px;
-    float: right;
-    margin-right: 10px;
-    padding: 10px 15px 6px;
-    position: relative;
-    z-index: 5;
+    padding: 8px 5px;
 }
 
-
-
-#floatingbox-receipe .tooltiptext {
-    visibility: hidden;
-    position: fixed;
-    right: 30px;
-    top: 240px;
-    width: 100px;
-    background-color: #999;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-
-    /* Position the tooltip*/
-    z-index: 1;
+#left-area .recipe-listing-item .recipe-info .rating .on, #left-area .recipe-listing-item .recipe-info .rating .off {
+    background: rgba(0, 0, 0, 0) url("images/ratings-big.png") no-repeat scroll center top;
+    height: 26px;
+    margin: 0;
+    width: 19px;
 }
 
-#floatingbox-receipe:hover .tooltiptext {
-    visibility: visible;
+#left-area .recipe-listing-item .recipe-info .rating span {
+    display: inline-block;
+    line-height: 25px;
+    margin: 0 0 0 5px;
+    vertical-align: top;
 }
 
-#social-bar .icon {
-    color: white;
-    border-radius: 4px;
-    border: 1px outset rgba(128, 128, 128, 0.5);
-    min-width: 37px;
-    line-height: 37px;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.5);
+#left-area .recipe-listing-item .recipe-info .rating .off {
+    background-position: center bottom;
 }
 
-@media only screen and (min-width: 600px) {
-
-    #social-bar {
-        width: 100%;
-        text-align: center;
-    }
+.tabed .block li .rate span.on {
+    background: rgba(0, 0, 0, 0) url("images/spons.png") no-repeat scroll left top;
 }
 
-
-
-#social-bar a {
-    margin-right: 5px;
-    padding: 5px; /* Increase hit rectangle for touch devices */
-
+.tabed .block li .rate span {
+    background: rgba(0, 0, 0, 0) url("images/spons.png") no-repeat scroll right top;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    width: 12px;
+}
+#whats-hot .cat-list li .img-box::after,
+#whats-hot .cat-list li .img-box::before {
+    border: none !important;
 }
 
-#social-bar a:first-child {
-    padding-left: 0;
+#whats-hot .cat-list li .img-box img {
+    width: auto;
 }
 
-/* Set icon color related to the service */
-
-#social-bar a span {
-    margin-left: 5px;
+#whats-hot .cat-list li .img-box {
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
 }
 
-#social-bar .icon-rss {
-    background: #e5842f;
+#breadcrumbs {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    font-weight: normal;
+}
+.top-search .most-rated {
+  display: block;
+  width: 31px;
+  height: 86px;
+  background: url(images/most-rated-btn.png) no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
-#social-bar .icon-facebook {
-    background: #3B5998;
+#content{
+    background:white;
 }
-
-#social-bar .icon-twitter {
-    background: #00ACED;
-}
-
-#social-bar .icon-google-plus {
-    background: #E14107;
-}
-
-@media (min-width: 1021px) {
-    #social-bar .fa-whatsapp {
-        visibility: hidden;
-    }
-}
-
-@media (max-width: 1020px) {
-    #social-bar .fa-whatsapp{
-        visibility: visible;
-    }
-}
-/* Don't underline icon etc. */
-#social-bar a:hover {
-    text-decoration: none;
-}
-
-#social-bar a:hover span {
-    text-decoration: underline;
-    color: #333333; /* Match icon highlight color */
-}
-
-/* Animate mouse hover */
-#social-bar a .icon {
-    transition: background 0.5s;
-}
-
-#social-bar a:hover .icon {
-    background: #333333;
-    transition: background 0.5s;
-}
-
-.fancyboxID{
-    width:660px;
-    height:380px;
-    overflow-x:hidden;
-    overflow-y:scroll;
-}
-.sub-menu{
-    margin-left:0;
-}
-
-@media (min-width: 300px){
-    .fancyboxID{
-        width:220px;
-        height:380px;
-        overflow-x:hidden;
-        overflow-y:scroll;
-    }
-}
-
-@media (min-width: 321px){
-    .fancyboxID{
-        width:300px;
-        height:380px;
-        overflow-x:hidden;
-        overflow-y:scroll;
-    }
-}
-@media (min-width: 360px){
-    .fancyboxID{
-        width:340px;
-        height:380px;
-        overflow-x:hidden;
-        overflow-y:scroll;
-    }
-}
-
-@media (min-width: 420px){
-    .fancyboxID{
-        width:400px;
-        height:380px;
-        overflow-x:hidden;
-        overflow-y:scroll;
-    }
-}
-
-@media (min-width: 520px){
-    .fancyboxID{
-        width:500px;
-        height:380px;
-        overflow-x:hidden;
-        overflow-y:scroll;
-    }
-}
-
-@media (min-width: 620px){
-    .fancyboxID{
-        width:600px;
-        height:380px;
-        overflow-x:hidden;
-        overflow-y:scroll;
-    }
-}
-
-@media (min-width: 720px){
-    .fancyboxID{
-        width:680px;
-        height:380px;
-        overflow-x:hidden;
-        overflow-y:scroll;
-    }
-}
+*/
