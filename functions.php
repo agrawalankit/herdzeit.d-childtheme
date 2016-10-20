@@ -1,12 +1,13 @@
 <?php
 require_once 'theme-options.php';
 require_once 'shortcodes/right-slider-sc.php';
+require_once 'shortcodes/post-grid.php';
     
     
     
 class frcChildThemeInit{
         
-        private $_theme_directory_uri = "";
+    private $_theme_directory_uri = "";
       
         
         
@@ -40,6 +41,9 @@ class frcChildThemeInit{
         //public scripts
         wp_enqueue_script(
             'frc_main_js', $this->_theme_directory_uri . '/js/' . 'main.min.js', array('jquery'), time()
+        );
+         wp_enqueue_script(
+            'bootstrap_js', $this->_theme_directory_uri . '/js/dev/' . 'bootstrap.js', array('jquery'), time()
         );
         
     }

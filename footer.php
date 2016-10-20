@@ -1,31 +1,38 @@
-</div><!-- end of content div -->
+<div class="container shadow">
 <div class="bot-ads-area">
 <?php if ( ! dynamic_sidebar( 'Bottom Advertisement Area' )) : endif; ?>
 </div>
 <!-- CONTENT ENDS HERE -->
 <!-- ============= BOTTOM AREA STARTS HERE ============== -->
-<div class="row">
-<div id="bottom-wrap">
-<div class="w-pet-border"></div>
-    <ul id="bottom" class="clearfix">
-        <li class="col-lg-4 col-md-6 col-xs-12">
+
+<div class="row" id="" style="background-color: #ebeced;">
+
+    <div class="w-pet-border" s></div>
+
+    <div class="col-lg-4 col-md-6 col-xs-12">
+    
             <ul>
                 <?php dynamic_sidebar('Footer Column 1'); ?>
             </ul>
-        </li>
-        <li class="col-lg-4 col-md-6 col-xs-12">
+      
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+       
             <ul>
                 <?php dynamic_sidebar('Footer Column 2'); ?>
             </ul>
-        </li>
-        <li class="col-lg-4 col-md-6 col-xs-12">
+       
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+       
             <ul>
                 <?php dynamic_sidebar('Footer Column 3'); ?>
             </ul>
-        </li>
+        
     </ul><!-- end of bottom div -->
+    </div>
 </div><!-- end of bottom-wrap div -->
-</div>
+
 <!-- ============= BOTTOM AREA ENDS HERE ============== -->
 
 
@@ -126,6 +133,28 @@ if ( is_singular('recipe') )
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+
+
+
+jQuery(document).ready(function($){
+    
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        
+        
+        if(scroll > 200){
+            $('#hidden-nav').fadeIn();
+        }
+        if(scroll < 200){
+            $('#hidden-nav').hide();
+        }
+        
+        
+    });
+    
+    
+    
+})
 </script>
 </body>
 </html>

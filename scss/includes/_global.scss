@@ -99,9 +99,6 @@ h6 {
 h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
   color: #68aa10;
 }
-
-
-
 .main-wrap{
     background: none;
 }
@@ -118,6 +115,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     0 6px white,           // Bottom Masking Shadow
     7px 0 4px -3px rgba(0,0,0,.1),  // Left-shadow
     -7px 0 4px -3px rgba(0,0,0,.1);
+  margin-top: -7px;
 }
 li{
     list-style: none;

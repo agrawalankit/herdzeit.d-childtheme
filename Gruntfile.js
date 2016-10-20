@@ -65,8 +65,8 @@ module.exports = function (grunt) {
         */
        chokidar: {
             scripts: {
-                files: ['**/*.scss'],
-                tasks: ['sass', 'autoprefixer'],
+                files: ['**/*.scss', '**/*.js'],
+                tasks: ['sass', 'autoprefixer', 'uglify'],
                 options: {
                 spawn: false,
                 }

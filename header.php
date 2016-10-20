@@ -1,5 +1,8 @@
+<?php require_once  get_stylesheet_directory() . '/includes/wp_bootstrap_navwalker.php'; ?>
+
+
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> style="margin-top:0 !important;">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +33,34 @@
 
 	wp_head();
 	?>
+                <style>
+                   #second-nav{
+                    margin: 0 -15px 20px -15px;
+                    border: none;
+                    border-radius: 0;
+                    background-color: #67ab23;
+                    color: white;
+                    border-bottom: 3px solid #487026;
+                   }
+                   #second-nav a, #second-nav a:hover{
+                       color: white;
+                   }
+                   #second-nav .navbar-toggle{
+                       border:none;
+                       
+                   }
+                   #second-nav .navbar-default .navbar-toggle .icon-bar {
+                        background-color: #fff;
+                    }
+                #second-nav .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+                    background-color: transparent;
+                }
+                @media screen and (max-width: 766px){
+                    #header-wrapper{
+                        display:none;
+                    }
+                }
+                </style>
 
 </head>
 
@@ -44,6 +75,47 @@
 
     
 <!-- ============= HEADER STARTS HERE ============== -->
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="display:none; background-color: white; border:none;" id="hidden-nav">
+                        <div class="container">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-menu" style="color:white;">
+                                    <span class="sr-only">Menü ausklappen</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <?php
+
+                                if ( function_exists( 'ot_get_option' ) ) {
+                                         $sitelogo = esc_url( ot_get_option( 'header_logo_image') );
+                                 }
+                                  ?>
+                                <a class="responsive_logo" href="<?php echo home_url() ?>"><img src="<?php echo esc_url($sitelogo) ?>" alt="herdzeit logo" class="logo" id="transition-logo"  style="max-height:40px; width: auto; padding-left: 15px; "/></a>
+                                    
+                                </a>
+                            </div>
+
+                            <?php
+                                wp_nav_menu(array(
+                                    'menu' => 'main-menu',
+                                    'theme_location' => 'main-menu',
+                                    'depth' => 2,
+                                    'container' => 'div',
+                                    'container_class' => 'collapse navbar-collapse',
+                                    'container_id' => 'header-menu',
+                                    'menu_class' => 'nav navbar-nav',
+                                    'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                    'walker' => new wp_bootstrap_navwalker())
+                                );
+                            ?>
+                      
+                        </div>
+ </nav>
+
+
+
+
 
 <div class="container shadow" >
     <div class="row">
@@ -99,47 +171,42 @@
         </div>
     </div>
 	<!-- NAVIGATION BAR STARTS HERE -->
-        <div class="row">
-            
-      
-	<div id="nav-wrap">
-		<div class="inn-nav clearfix">
+        <nav class="navbar navbar-default" role="navigation" style="" id="second-nav" >
+                        <div class="container">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-menu-visible">
+                                    <span class="sr-only">Menü ausklappen</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                
+                                <a id="logo-mobile" style="display:none;" class="responsive_logo" href="<?php echo home_url() ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/images/Herdzeit_FullLogo_Vektor_Mobil.png' ?>" alt="herdzeit logo" style="max-height:50px; padding-left:15px;"/></a>
+                                    
+                                </a>
+                                
+                                
+                                
+                            </div>
 
-			<!-- MAIN NAVIGATION STARTS HERE -->
-			<?php
-			wp_nav_menu( array(
-					'theme_location' => 'main-menu',
-					'container' => false,
-					'menu_class'=>'nav'
-				)
-			);
-			?>
-			<!-- MAIN NAVIGATION ENDS HERE -->
-
-
-			<!-- SOCIAL NAVIGATION -->
-			<?php
-			wp_nav_menu( array(
-					'theme_location' => 'social-menu',
-					'container' => false,
-					'menu_class'=>'social-nav',
-                    'fallback_cb'     => false,
-				)
-			);
-			?>
-		</div>
-	</div><!-- end of nav-wrap -->
-	<!-- NAVIGATION BAR ENDS HERE -->
-        <style>
-            .sub-menu{
-             
-                margin: 0 0;
-                
-                
-            }
-        </style>
-
-</div><!-- end of header-wrapper div -->
+                            <?php
+                                wp_nav_menu(array(
+                                    'menu' => 'main-menu',
+                                    'theme_location' => 'main-menu',
+                                    'depth' => 2,
+                                    'container' => 'div',
+                                    'container_class' => 'collapse navbar-collapse',
+                                    'container_id' => 'header-menu-visible',
+                                    'menu_class' => 'nav navbar-nav',
+                                    'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                    'walker' => new wp_bootstrap_navwalker())
+                                );
+                            ?>
+                      
+                        </div>
+ </nav>
+        
 </div>
 <!-- ============= HEADER ENDS HERE ============== -->
 
@@ -193,5 +260,5 @@
     <?php if ( function_exists('yoast_breadcrumb') ) {
       yoast_breadcrumb('<p id="breadcrumbs">','</p>');
     } ?>
-
-    <div id="content" class="clearfix <?php if(is_page_template('template-home.php')){ echo 'homepage'; } ?>">
+   
+    <div id="" class="clearfix <?php if(is_page_template('template-home.php')){ echo 'homepage'; } ?>">

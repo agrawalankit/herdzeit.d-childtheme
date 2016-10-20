@@ -1,4 +1,11 @@
 @media screen and (max-width: 1023px) {
+    
+    #whats-hot {
+    margin: 0;
+    padding:15px !important;
+    }
+
+    
     #header-wrapper {
         max-width: 740px;
     }
@@ -29,7 +36,6 @@
         width: 57%;
     }
 }
-
 
 @media screen and (max-width: 765px) {
     #header-wrapper

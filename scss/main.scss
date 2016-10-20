@@ -38,6 +38,14 @@ footer
 slider 2
 -------------------------------------------------*/
 @import "includes/_slider2";
+/*------------------------------------------------
+whatshot
+-------------------------------------------------*/
+@import "includes/_whatshot";
+/*------------------------------------------------
+media
+-------------------------------------------------*/
+@import "includes/_mediaqueries.scss";
 
 /* Media queries*/
 
@@ -45,7 +53,7 @@ slider 2
     padding: 25px 0 10px 0 !Important;
     width: 232px;
 }
-/*
+
 #left-area .recipe-listing-item .recipe-info .rating {
     background-color: #fff;
     border: 1px solid #e3e3e3;
@@ -87,18 +95,7 @@ slider 2
     vertical-align: middle;
     width: 12px;
 }
-#whats-hot .cat-list li .img-box::after,
-#whats-hot .cat-list li .img-box::before {
-    border: none !important;
-}
 
-#whats-hot .cat-list li .img-box img {
-    width: auto;
-}
-
-#whats-hot .cat-list li .img-box {
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
-}
 
 #breadcrumbs {
     margin-bottom: 10px;
@@ -118,4 +115,3 @@ slider 2
 #content{
     background:white;
 }
-*/

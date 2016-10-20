@@ -180,4 +180,22 @@ input[type="text"], input[type="password"], textarea {
     padding-left: 20px;
     padding-right: 20px;
 }
+.about{
+    img{
+  margin-bottom: 15px;   
+}
+    
+} 
 
+#menu-footer-navigation{
+    
+    margin-top: 15px;
+    li{
+        padding: 5px 0;
+        border-bottom: 1px solid #ddd;
+        a{
+            color: #67ab23;
+        }
+    }
+    
+}
