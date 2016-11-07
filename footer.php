@@ -1,4 +1,4 @@
-<div class="container shadow">
+<div class="container shadow 123">
 <div class="bot-ads-area">
 <?php if ( ! dynamic_sidebar( 'Bottom Advertisement Area' )) : endif; ?>
 </div>
