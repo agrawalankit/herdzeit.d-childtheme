@@ -121,6 +121,20 @@ if ( is_singular('recipe') )
     addFocusAndBlur(jQuery('#cmessage'),'<?php _e('Message', 'FoodRecipe'); ?>');
     addFocusAndBlur(jQuery('#message'), '<?php _e('Type your comments here', 'FoodRecipe'); ?>');
 </script>
+
+<script>
+function showPopup($id)
+{
+    jQuery('#myModal-'+$id).modal({
+        show: true, 
+        backdrop: 'static',
+        keyboard: true
+     });
+	 return false;
+}
+
+</script>
+
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
