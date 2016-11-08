@@ -16,6 +16,8 @@ class frcChildThemeInit{
             add_action('init', array($this, 'set_theme_directory'));
             add_action('wp_enqueue_scripts', array($this, 'enqueue_public_scripts_and_styles')); //enqueue public facing elements
             add_filter( 'wp_nav_menu_objects', array($this, 'add_menu_parent_class') );
+        
+           add_filter( 'get_the_excerpt', array($this, 'custom_add_light_box') );
 
            // add_action('admin_enqueue_scripts', array($this, 'enqueue_admin_scripts_and_styles')); //enqueues admin elements
         }
@@ -67,6 +69,28 @@ class frcChildThemeInit{
 }
 
     
+    
+public function custom_add_light_box($output)
+	{
+		
+		$html = '<br>';		
+		$html .= '<a href="javascript:void(0);" onclick="showPopup(\''.get_the_ID().'\')" class="readmore">View More</a>';
+		$html .= '			
+				
+				<div class="modal fade" id="myModal-'.get_the_ID().'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="myModalLabel">'.get_the_title().'</h4>
+</div>
+<div class="modal-body">'.get_the_content().'</div>
+</div>
+</div>
+</div>';
+		$output = $output.$html;
+	  	return $output;
+	}    
     
     
 
